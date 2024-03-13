@@ -21,54 +21,62 @@ To create a student database and execute DDL queries using SQL.
 5. RENAME: This is used to rename an object existing in the database.
 
 ## Query:
-### 1) Create a database studentdb
+## 1) Create a database studentdb
 
-### SQL QUERY:
+## SQL QUERY:
+```
+use chandrumk
+```
+## OUTPUT:
+![278823032-33a2f6cf-297a-4794-8bc5-6b35d5d839e7](https://github.com/Yazhini-G/DBMS/assets/120244201/6ec059a4-eb19-4c49-8549-65c348b2ee26)
 
-### OUTPUT:
+## 2) Create a table student and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
 
-### 2) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
+## SQL QUERY:
+```
+create table STUDENT(S_Roll_no int,S_Name char(20),S_Age int,S_Address char(30),S_Phone_no int);
+``` 
+## OUTPUT:
+![278823065-546b7d10-2f3d-458c-93e1-263c178605ac](https://github.com/Yazhini-G/DBMS/assets/120244201/ad247cf0-1907-44ea-9165-cc44b868d045)
 
-### SQL QUERY: 
+![278823566-b54338cb-c3e0-4a0a-908b-516c499aacbe](https://github.com/Yazhini-G/DBMS/assets/120244201/0f213322-8771-4daf-954c-ff3001d68255)
 
-
-### OUTPUT:
-
-### 3) Alter the above student table by adding another attribute department
-
-### SQL QUERY: 
-
-### OUTPUT:
-
-### 4) Rename the student table to mystudent
-
-### SQL QUERY: 
-
-
-
-### OUTPUT:
-
-### 5) Delete the mystudent rows using truncate keyword
-
-### SQL QUERY: 
+## 3) Alter the above student table by adding another attribute department
+## SQL QUERY:
+```
+alter table STUDENT add S_Dept char(10);
+ ```
+## OUTPUT:
+![278823089-7a6f43c2-7722-4ccc-9c50-187dec02d321](https://github.com/Yazhini-G/DBMS/assets/120244201/54e24e8b-e397-497f-bb80-02017fea5cca)
 
 
-### OUTPUT:
-### 4) Drop the mystudent table
- 
-### SQL QUERY: 
+## 4) Rename the student table to mystudent
+## SQL QUERY:
+```
+rename table STUDENT to MYSTUDENT;
+```
+## OUTPUT:
+![278823228-4caaee67-1fe4-4a30-acfe-0fff0dd693ab](https://github.com/Yazhini-G/DBMS/assets/120244201/59e766f1-35e0-483b-9e7a-41ea160e1f4b)
 
 
-### OUTPUT:
+## 5) Delete the mystudent rows using truncate keyword
+## SQL QUERY:
+```
+truncate table STUDENT;
+```
+## OUTPUT:
 
+![278823271-34efe174-772c-4be9-80f5-3b82a131252e](https://github.com/Yazhini-G/DBMS/assets/120244201/336b03a7-b8d5-48f7-9117-a81a49835d80)
 
-
-
-
-
-
+## 6) Drop the mystudent table
+## SQL QUERY:
+```
+drop table MYSTUDENT;
+```
+## OUTPUT:
+![278823299-07813b5d-909c-424f-94fc-769b28adebfd](https://github.com/Yazhini-G/DBMS/assets/120244201/16dec598-85c1-4495-9fe7-036336e95dac)
 
 ## Result:
-         Thus the basic DDL commands in SQL are executed. 
+Thus the basic DDL commands in SQL are executed. 
 
 
