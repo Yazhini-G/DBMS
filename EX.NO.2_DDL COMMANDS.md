@@ -21,54 +21,69 @@ To create a student database and execute DDL queries using SQL.
 5. RENAME: This is used to rename an object existing in the database.
 
 ## Query:
-### 1) Create a database studentdb
 
-### SQL QUERY:
-
-### OUTPUT:
-
-### 2) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
+### 1) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
 
 ### SQL QUERY: 
-
-
+```
+create table students(
+    registernumber integer,
+    name varchar(50),
+    age integer,
+    address varchar(60),
+    phonenumber integer
+    
+);
+```
 ### OUTPUT:
 
-### 3) Alter the above student table by adding another attribute department
+![312322071-28576b8f-dc1a-4950-aa2d-efa3a0c0adc5](https://github.com/DrUmaRaniV/DBMS/assets/120244201/c6bbcc39-0919-48d0-bc68-8ff8fa3bd4f7)
+
+
+### 2) Alter the above student table by adding another attribute department
 
 ### SQL QUERY: 
-
+```
+alter table students
+add department char(80);
+```
 ### OUTPUT:
 
-### 4) Rename the student table to mystudent
+![312324660-79e91054-1c31-40ad-a62f-44590f1f595b](https://github.com/DrUmaRaniV/DBMS/assets/120244201/ef3751d5-f5ee-447f-b6bd-91f31fa361d9)
+
+### 3) Rename the student table to mystudent
 
 ### SQL QUERY: 
-
-
+```
+alter table students rename to mystudent;
+```
 
 ### OUTPUT:
 
-### 5) Delete the mystudent rows using truncate keyword
+![312325386-a26a4b95-77f2-458c-a9d0-338e2649c32d](https://github.com/DrUmaRaniV/DBMS/assets/120244201/185e0eed-c87a-4ffe-a470-c6f720aef8db)
+
+### 4) Delete the mystudent rows using truncate keyword
 
 ### SQL QUERY: 
-
+```
+truncate table students
+```
 
 ### OUTPUT:
-### 4) Drop the mystudent table
+
+![312327472-817ce03a-f376-4cce-ae60-dbb906eaadba](https://github.com/DrUmaRaniV/DBMS/assets/120244201/e865b821-1c67-44c6-8a17-1f2f1f338357)
+
+### 5) Drop the mystudent table
  
 ### SQL QUERY: 
-
-
+```
+drop table students;
+```
 ### OUTPUT:
 
-
-
-
-
-
-
+![312326420-54dcf9fb-3137-4e6a-8119-d005c29705b6](https://github.com/DrUmaRaniV/DBMS/assets/120244201/c73fff07-4afd-477a-b1cb-5c9fc57fc4bd)
 
 ## Result:
-         Thus the basic DDL commands in SQL are executed. 
+Thus the basic DDL commands in SQL are executed. 
 
 
