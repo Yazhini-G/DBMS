@@ -26,47 +26,56 @@ To create a student database and execute DDL queries using SQL.
 
 ## SQL QUERY:
 ```
-create table STUDENT(S_Roll_no int,S_Name char(20),S_Age int,S_Address char(30),S_Phone_no int);
+create table students(
+    registernumber integer,
+    name varchar(50),
+    age integer,
+    address varchar(60),
+    phonenumber integer
+    
+);
 ``` 
 ## OUTPUT:
-![278823065-546b7d10-2f3d-458c-93e1-263c178605ac](https://github.com/Yazhini-G/DBMS/assets/120244201/ad247cf0-1907-44ea-9165-cc44b868d045)
 
-![278823566-b54338cb-c3e0-4a0a-908b-516c499aacbe](https://github.com/Yazhini-G/DBMS/assets/120244201/0f213322-8771-4daf-954c-ff3001d68255)
+![312322071-28576b8f-dc1a-4950-aa2d-efa3a0c0adc5](https://github.com/Yazhini-G/DBMS/assets/120244201/399cce5a-9317-444b-97be-6d3a4ef4a418)
 
 ## 2) Alter the above student table by adding another attribute department
 ## SQL QUERY:
 ```
-alter table STUDENT add S_Dept char(10);
+alter table students
+add department char(80);
  ```
 ## OUTPUT:
-![278823089-7a6f43c2-7722-4ccc-9c50-187dec02d321](https://github.com/Yazhini-G/DBMS/assets/120244201/54e24e8b-e397-497f-bb80-02017fea5cca)
 
+![312324660-79e91054-1c31-40ad-a62f-44590f1f595b](https://github.com/Yazhini-G/DBMS/assets/120244201/2dba4cb6-8a85-4a46-95a4-3acafcc33eaf)
 
 ## 3) Rename the student table to mystudent
 ## SQL QUERY:
 ```
-rename table STUDENT to MYSTUDENT;
+alter table students rename to mystudent;
+
 ```
 ## OUTPUT:
-![278823228-4caaee67-1fe4-4a30-acfe-0fff0dd693ab](https://github.com/Yazhini-G/DBMS/assets/120244201/59e766f1-35e0-483b-9e7a-41ea160e1f4b)
 
+![312325386-a26a4b95-77f2-458c-a9d0-338e2649c32d](https://github.com/Yazhini-G/DBMS/assets/120244201/6e458657-0feb-4b13-af70-9bccb08ed010)
 
 ## 4) Delete the mystudent rows using truncate keyword
 ## SQL QUERY:
 ```
-truncate table STUDENT;
+truncate table students
 ```
 ## OUTPUT:
 
-![278823271-34efe174-772c-4be9-80f5-3b82a131252e](https://github.com/Yazhini-G/DBMS/assets/120244201/336b03a7-b8d5-48f7-9117-a81a49835d80)
+![312327472-817ce03a-f376-4cce-ae60-dbb906eaadba](https://github.com/Yazhini-G/DBMS/assets/120244201/2b3de822-3685-4775-aa7a-848d9c832dcc)
 
 ## 5) Drop the mystudent table
 ## SQL QUERY:
 ```
-drop table MYSTUDENT;
+drop table students;
 ```
 ## OUTPUT:
-![278823299-07813b5d-909c-424f-94fc-769b28adebfd](https://github.com/Yazhini-G/DBMS/assets/120244201/16dec598-85c1-4495-9fe7-036336e95dac)
+
+![312326420-54dcf9fb-3137-4e6a-8119-d005c29705b6](https://github.com/Yazhini-G/DBMS/assets/120244201/0e66c61b-3159-442b-aff3-311a4ce0df73)
 
 ## Result:
 Thus the basic DDL commands in SQL are executed. 
